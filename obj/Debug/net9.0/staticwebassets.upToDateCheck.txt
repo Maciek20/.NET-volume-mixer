@@ -1,0 +1,125 @@
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\favicon.ico
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation\LICENSE.md
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\js\site.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.slim.min.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\LICENSE.txt
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\css\site.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery\dist\jquery.min.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\jquery-validation\dist\additional-methods.js
+E:\desktop_link\C#\dotnet web\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

@@ -1,0 +1,196 @@
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\appsettings.Development.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\appsettings.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.staticwebassets.runtime.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.staticwebassets.endpoints.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.exe
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.deps.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.runtimeconfig.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.dll
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.pdb
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.AssemblyInfoInputs.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.AssemblyInfo.cs
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.csproj.CoreCompileInputs.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.RazorAssemblyInfo.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.RazorAssemblyInfo.cs
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\bundle\WebApplication3.styles.css
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\y1s7yu9eil-b9sayid5wm.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\d9awlmrscw-61n19gt1b8.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\fjx8vsb7m8-xtxxf3hu2r.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ibujvaja0l-bqjiyaj88i.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\dubq79moni-c2jlpeoesf.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\r4mtqxzzfk-erw9l3u2r3.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\o3amkemrc5-aexeepp0ev.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\58zcyvu9zz-d7shbmvgxk.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\cbhcbple4h-ausgxo2sd3.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\d26jq90gix-k8d9w2qqmf.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\c387l1rzki-cosvhxvwiu.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\i3s2zpnoft-ub07r2b239.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\nuj536jbo9-fvhpjtyr6v.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\k31j8tuxvy-b7pk76d08c.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\vpnsue2s1i-fsbi9cje9m.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\4xm7eyhuf7-rzd6atqjts.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\zpjk44vgca-ee0r1s7dh0.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\2z1iiaer8o-dxx9fxp4il.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\3agbqwhvjx-jd9uben2k1.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\lxtfr0djbl-khv3u5hwcm.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\5bed2u3eck-r4e9w2rdcm.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rx71uyfxgg-lcd1t2u6c8.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\uoait57fjz-c2oey78nd0.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\s4ebb6mzf6-tdbxkamptv.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\0ry02eaa75-j5mq2jizvt.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ec83oxz5u6-06098lyss8.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\nf50uu2ova-nvvlpmu67g.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\t4vr6r6j9s-s35ty4nyc5.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rtd8cl8zak-pj5nd1wqec.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\783qsna9z0-46ein0sx1k.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\dzay02skey-v0zj4ognzu.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\jm9cveukzd-37tfw0ft22.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\qvc9evo8ti-hrwsygsryq.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\yjk9tsybn9-pk9g2wxc8p.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\vo4qs1f6fk-ft3s53vfgj.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\1pd8y84z29-6cfz1n2cew.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rrowvnnsyi-6pdc2jztkx.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\xnuldfdea4-493y06b0oq.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\92it0ii66o-iovd86k7lj.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\knzjccbicc-vr1egmr9el.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\gk310f8m2v-kbrnm935zg.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\l9dagsg0no-jj8uyg4cgr.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\33lwuo2m1l-y7v9cxd14o.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\r7frobs28n-notf2xhcfb.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\wi8c401llu-h1s4sie4z3.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\u7kpcqyw6g-63fj8s7r0e.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\qdyijw0zpw-0j3bgjxly4.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\xm9cki8y2e-47otxtyo56.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\3d2bmffvzc-4v8eqarkd7.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\t7t2u1er6s-356vix0kms.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\zkyo1jy9cr-83jwlth58m.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\gatpxee4ly-mrlpezrjn3.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\fzdvfvqccx-lzl9nlhx6b.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\pu415g2v3q-ag7o75518u.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\e2mtcjeqjn-x0q3zqp4vz.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\42jbe543ts-0i3buxo5is.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ys5h6wrjvt-o1o13a6vjx.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ukuo3msr0p-ttgo8qnofa.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\kjd985di8y-2z0ns9nrw6.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\2xbev6lwja-muycvpuwrr.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\pjjwa0bm4i-87fc7y1x7t.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\s4z52cqgz0-mlv21k5csn.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\f4wgbepiu1-6lu1x1s5fs.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\kvtcfivxhq-6lu1x1s5fs.gz
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.build.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.development.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.build.WebApplication3.props
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication3.props
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebApplication3.props
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.pack.json
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.dll
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\refint\WebApplication3.dll
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.pdb
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.genruntimeconfig.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net9.0\ref\WebApplication3.dll
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\appsettings.Development.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\appsettings.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.staticwebassets.endpoints.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.staticwebassets.runtime.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.exe
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.deps.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.runtimeconfig.json
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.dll
+E:\desktop_link\C#\dotnet web\WebApplication3\bin\Debug\net9.0\WebApplication3.pdb
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.AssemblyInfoInputs.cache
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.AssemblyInfo.cs
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.csproj.CoreCompileInputs.cache
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.RazorAssemblyInfo.cache
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.RazorAssemblyInfo.cs
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\bundle\WebApplication3.styles.css
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\scopedcss\projectbundle\WebApplication3.bundle.scp.css
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\y1s7yu9eil-b9sayid5wm.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\d9awlmrscw-61n19gt1b8.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\fjx8vsb7m8-xtxxf3hu2r.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ibujvaja0l-bqjiyaj88i.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\dubq79moni-c2jlpeoesf.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\r4mtqxzzfk-erw9l3u2r3.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\o3amkemrc5-aexeepp0ev.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\58zcyvu9zz-d7shbmvgxk.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\cbhcbple4h-ausgxo2sd3.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\d26jq90gix-k8d9w2qqmf.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\c387l1rzki-cosvhxvwiu.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\i3s2zpnoft-ub07r2b239.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\nuj536jbo9-fvhpjtyr6v.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\k31j8tuxvy-b7pk76d08c.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\vpnsue2s1i-fsbi9cje9m.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\4xm7eyhuf7-rzd6atqjts.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\zpjk44vgca-ee0r1s7dh0.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\2z1iiaer8o-dxx9fxp4il.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\3agbqwhvjx-jd9uben2k1.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\lxtfr0djbl-khv3u5hwcm.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\5bed2u3eck-r4e9w2rdcm.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rx71uyfxgg-lcd1t2u6c8.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\uoait57fjz-c2oey78nd0.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\s4ebb6mzf6-tdbxkamptv.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\0ry02eaa75-j5mq2jizvt.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ec83oxz5u6-06098lyss8.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\nf50uu2ova-nvvlpmu67g.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\t4vr6r6j9s-s35ty4nyc5.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rtd8cl8zak-pj5nd1wqec.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\783qsna9z0-46ein0sx1k.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\dzay02skey-v0zj4ognzu.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\jm9cveukzd-37tfw0ft22.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\qvc9evo8ti-hrwsygsryq.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\yjk9tsybn9-pk9g2wxc8p.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\vo4qs1f6fk-ft3s53vfgj.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\1pd8y84z29-6cfz1n2cew.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\rrowvnnsyi-6pdc2jztkx.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\xnuldfdea4-493y06b0oq.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\92it0ii66o-iovd86k7lj.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\knzjccbicc-vr1egmr9el.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\gk310f8m2v-kbrnm935zg.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\l9dagsg0no-jj8uyg4cgr.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\33lwuo2m1l-y7v9cxd14o.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\r7frobs28n-notf2xhcfb.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\wi8c401llu-h1s4sie4z3.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\u7kpcqyw6g-63fj8s7r0e.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\qdyijw0zpw-0j3bgjxly4.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\xm9cki8y2e-47otxtyo56.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\3d2bmffvzc-4v8eqarkd7.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\t7t2u1er6s-356vix0kms.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\zkyo1jy9cr-83jwlth58m.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\gatpxee4ly-mrlpezrjn3.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\fzdvfvqccx-lzl9nlhx6b.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\pu415g2v3q-ag7o75518u.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\e2mtcjeqjn-x0q3zqp4vz.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\42jbe543ts-0i3buxo5is.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ys5h6wrjvt-o1o13a6vjx.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\ukuo3msr0p-ttgo8qnofa.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\kjd985di8y-2z0ns9nrw6.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\2xbev6lwja-muycvpuwrr.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\pjjwa0bm4i-87fc7y1x7t.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\s4z52cqgz0-mlv21k5csn.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\f4wgbepiu1-6lu1x1s5fs.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\compressed\kvtcfivxhq-6lu1x1s5fs.gz
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.build.json
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.development.json
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssets.props
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.WebApplication3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.build.WebApplication3.props
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication3.props
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebApplication3.props
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.pack.json
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.dll
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\refint\WebApplication3.dll
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.pdb
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\WebApplication3.genruntimeconfig.cache
+E:\desktop_link\C#\dotnet web\WebApplication3\obj\Debug\net9.0\ref\WebApplication3.dll

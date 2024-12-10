@@ -1,0 +1,7 @@
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.GeneratedMSBuildEditorConfig.editorconfig
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.AssemblyInfoInputs.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.AssemblyInfo.cs
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.csproj.CoreCompileInputs.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.MvcApplicationPartsAssemblyInfo.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.RazorAssemblyInfo.cache
+E:\desktop_link\programowanie własne\dotnet web\WebApplication3\obj\Debug\net8.0\WebApplication3.RazorAssemblyInfo.cs
