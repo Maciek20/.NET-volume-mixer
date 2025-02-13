@@ -1,13 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\desktop_link\\C#\\dotnet web\\WebApplication3\\",
+  "WorkspaceRootPath": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|e:\\desktop_link\\c#\\dotnet web\\webapplication3\\controllers\\soundbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\controllers\\soundbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:controllers\\soundbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|e:\\desktop_link\\c#\\dotnet web\\webapplication3\\views\\soundbar\\soundbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\views\\soundbar\\soundbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:views\\soundbar\\soundbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -18,30 +27,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SoundBar.cshtml",
-              "DocumentMoniker": "E:\\desktop_link\\C#\\dotnet web\\WebApplication3\\Views\\SoundBar\\SoundBar.cshtml",
-              "RelativeDocumentMoniker": "Views\\SoundBar\\SoundBar.cshtml",
-              "ToolTip": "E:\\desktop_link\\C#\\dotnet web\\WebApplication3\\Views\\SoundBar\\SoundBar.cshtml",
-              "RelativeToolTip": "Views\\SoundBar\\SoundBar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T20:02:24.451Z",
+              "DocumentIndex": 0,
+              "Title": "AudioSessionWrapper.h",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-28T15:12:55.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\dllmain.cpp",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\dllmain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-28T11:33:11.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioSessionWrapper.cpp",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-28T11:33:10.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoundBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Views\\SoundBar\\SoundBar.cshtml",
+              "RelativeDocumentMoniker": "Views\\SoundBar\\SoundBar.cshtml",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Views\\SoundBar\\SoundBar.cshtml",
+              "RelativeToolTip": "Views\\SoundBar\\SoundBar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:02:24.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SoundBarController.cs",
-              "DocumentMoniker": "E:\\desktop_link\\C#\\dotnet web\\WebApplication3\\Controllers\\SoundBarController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\SoundBarController.cs",
               "RelativeDocumentMoniker": "Controllers\\SoundBarController.cs",
-              "ToolTip": "E:\\desktop_link\\C#\\dotnet web\\WebApplication3\\Controllers\\SoundBarController.cs",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\SoundBarController.cs",
               "RelativeToolTip": "Controllers\\SoundBarController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBwAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T20:01:40.605Z",
               "EditorCaption": ""
