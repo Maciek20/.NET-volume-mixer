@@ -1,0 +1,2 @@
+#define AUDIOSESSIONWRAPPER_API __declspec(dllexport)
+#define AUDIOSESSIONWRAPPER_API __declspec(dllimport)
