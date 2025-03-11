@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication3", "WebApplication3.csproj", "{224EF377-5490-432A-AF3D-2679239030B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{415C369C-54FF-4053-8990-5E3A5362C836} = {415C369C-54FF-4053-8990-5E3A5362C836}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AudioSessionWrapper", "..\AudioSessionWrapper\AudioSessionWrapper.vcxproj", "{415C369C-54FF-4053-8990-5E3A5362C836}"
 EndProject

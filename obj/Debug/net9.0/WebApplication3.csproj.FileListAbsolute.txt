@@ -292,3 +292,4 @@ c:\Users\macie\Documents\GitHub\.NET-volume-mixer\obj\Debug\net9.0\refint\WebApp
 c:\Users\macie\Documents\GitHub\.NET-volume-mixer\obj\Debug\net9.0\WebApplication3.pdb
 c:\Users\macie\Documents\GitHub\.NET-volume-mixer\obj\Debug\net9.0\WebApplication3.genruntimeconfig.cache
 c:\Users\macie\Documents\GitHub\.NET-volume-mixer\obj\Debug\net9.0\ref\WebApplication3.dll
+C:\Users\macie\Documents\GitHub\.NET-volume-mixer\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

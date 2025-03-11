@@ -3,21 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\dependencies\\audiosessionmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:dependencies\\audiosessionmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\controllers\\soundbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:controllers\\soundbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\views\\soundbar\\soundbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:views\\soundbar\\soundbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|c:\\users\\macie\\documents\\github\\.net-volume-mixer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224EF377-5490-432A-AF3D-2679239030B1}|WebApplication3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{415C369C-54FF-4053-8990-5E3A5362C836}|..\\AudioSessionWrapper\\AudioSessionWrapper.vcxproj|C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,70 +45,125 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AudioSessionWrapper.h",
-              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
-              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
-              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
-              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-28T15:12:55.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dllmain.cpp",
-              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
-              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\dllmain.cpp",
-              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
-              "RelativeToolTip": "..\\AudioSessionWrapper\\dllmain.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-28T11:33:11.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SoundBar.cshtml",
-              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Views\\SoundBar\\SoundBar.cshtml",
-              "RelativeDocumentMoniker": "Views\\SoundBar\\SoundBar.cshtml",
-              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Views\\SoundBar\\SoundBar.cshtml",
-              "RelativeToolTip": "Views\\SoundBar\\SoundBar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T20:02:24.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "SoundBarController.cs",
               "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\SoundBarController.cs",
               "RelativeDocumentMoniker": "Controllers\\SoundBarController.cs",
               "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\SoundBarController.cs",
               "RelativeToolTip": "Controllers\\SoundBarController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwDgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T20:01:40.605Z"
+              "WhenOpened": "2025-03-11T19:53:38.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:53:37.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:52:57.325Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "AudioSessionWrapper.h",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T15:42:02.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AudioSessionWrapper.cpp",
               "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
               "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
-              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
-              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\AudioSessionWrapper.cpp*",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\AudioSessionWrapper.cpp*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-28T11:33:10.771Z",
+              "WhenOpened": "2025-02-13T15:42:27.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioSessionMenager.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Dependencies\\AudioSessionMenager.cs",
+              "RelativeDocumentMoniker": "Dependencies\\AudioSessionMenager.cs",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\.NET-volume-mixer\\Dependencies\\AudioSessionMenager.cs",
+              "RelativeToolTip": "Dependencies\\AudioSessionMenager.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwEQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:41:02.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "framework.h",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\framework.h",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\framework.h",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\framework.h",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\framework.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-11T18:47:18.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\pch.cpp",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\pch.cpp",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\pch.cpp",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-11T19:04:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
+              "RelativeDocumentMoniker": "..\\AudioSessionWrapper\\dllmain.cpp",
+              "ToolTip": "C:\\Users\\macie\\Documents\\GitHub\\AudioSessionWrapper\\dllmain.cpp",
+              "RelativeToolTip": "..\\AudioSessionWrapper\\dllmain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-11T19:24:15.951Z",
               "EditorCaption": ""
             }
           ]

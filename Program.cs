@@ -1,3 +1,5 @@
+using WebApplication3.Dependencies;
+
 namespace WebApplication3
 {
     public class Program
@@ -5,6 +7,8 @@ namespace WebApplication3
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddSingleton<AudioSessionMenager>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

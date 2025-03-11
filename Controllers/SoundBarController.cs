@@ -1,14 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication3.Dependencies;
 
 namespace WebApplication3.Controllers
 {
 	[Route("[controller]")]
 	public class SoundBarController : Controller
     {
+        private readonly AudioSessionMenager _audioManager;
+
+        public SoundBarController(AudioSessionMenager audioManager)
+        {
+            _audioManager = audioManager;
+        }
+
         public class VolMsg
         {
-            public int? Id { get; set; }
-            public int? Vol { get; set; }
+            public int Id { get; set; }
+            public int Vol { get; set; }
         }
         public class AppId
         {
@@ -27,9 +35,14 @@ namespace WebApplication3.Controllers
         public IActionResult SoundBar()
         {
             List<AppId> apps = new List<AppId>();
-            apps.Add(new AppId(1, "Firefox",10));
-            apps.Add(new AppId(2, "Brave",70));
-            apps.Add(new AppId(3, "Discord"));
+            for (int i =0; i< _audioManager.SessionCount; i++)
+            {
+                apps.Add(new AppId(i, _audioManager.GetProcessName(i), (int)(_audioManager.GetVolume(i)*100)));
+            }
+            
+            //apps.Add(new AppId(1, "Firefox",10));
+            //apps.Add(new AppId(2, "Brave",70));
+            //apps.Add(new AppId(3, "Discord"));
             return View(apps);
         }
 
@@ -40,7 +53,8 @@ namespace WebApplication3.Controllers
             //Console.Write("INPUT");
             foreach (VolMsg volMsg in msgs)
             {
-                Console.WriteLine(volMsg.Id +":"+ volMsg.Vol);
+                //Console.WriteLine(volMsg.Id +":"+ volMsg.Vol);
+                _audioManager.SetVolume(volMsg.Id, (float)(volMsg.Vol / 100));
             }
 			return Ok();
 		}
