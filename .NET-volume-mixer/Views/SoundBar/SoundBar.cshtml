@@ -12,6 +12,15 @@
     </div>
 }
 
+<button onclick="sendUdateEquest()">update sessions</button>
+
+@foreach (var app in Model)
+{
+    <div>
+            <!--img src="/SoundBar/icon/0" alt="Ikona procesu"-->
+    </div>
+}
+
 <script type="text/javascript">
     var apps = @Html.Raw(Json.Serialize(Model));
     let isRequestInProgress = false;
@@ -55,4 +64,16 @@
             }
         });
     });
+
+    function sendUdateEquest() {
+        $.ajax({
+            type: "GET",
+            url: '/SoundBar/UpdateSessions',
+            success: function (response) { },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Error:", jqXHR.status, jqXHR.responseText);
+            },
+            complete: function () {}
+            });
+    }
 </script>

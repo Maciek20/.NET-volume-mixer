@@ -10,7 +10,7 @@
 // Ta klasa została wyeksportowana z pliku dll
 class CAudioSessionWrapper {
 public:
-	CAudioSessionWrapper();
+    CAudioSessionWrapper();
     ~CAudioSessionWrapper();
     std::string GetProcessName(int index) const;
     void UpdateSessions();
@@ -19,16 +19,22 @@ public:
     void SetVolume(int index, float volume);
     bool GetMute(int index);
     void SetMute(int index, bool mute);
-    std::string IcoPath(int index);
+    int GetProcessIcon(int index, BYTE** buffer, DWORD* size);
 
 private:
+    struct ProcessIcoName {
+        std::string processName;
+        HICON Ico;
+    };
+
     struct Session {
         Microsoft::WRL::ComPtr<IAudioSessionControl> sessionControl;
         Microsoft::WRL::ComPtr<ISimpleAudioVolume> audioVolume;
-        std::string processName;
         DWORD processId;
-        std::string icoPath;
+        ProcessIcoName IcoName;
     };
+
+
 
     bool initialized = false;
     std::vector<Session> sessions;
@@ -38,5 +44,5 @@ private:
     Microsoft::WRL::ComPtr<IAudioSessionManager2> sessionManager;
     Microsoft::WRL::ComPtr<IAudioSessionEnumerator> sessionEnumerator;
 
-    std::string GetProcessNameById(DWORD processId) const;
+    ProcessIcoName GetProcessIcoAndNameById(DWORD processId) const;
 };

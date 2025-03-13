@@ -20,7 +20,7 @@ namespace WebApplication3.Dependencies
         [DllImport(dllPath)]
         private static extern void UpdateSessions(IntPtr wrapperPointer);
 
-        [DllImport(dllPath,EntryPoint = "SessionCount")]
+        [DllImport(dllPath, EntryPoint = "SessionCount")]
         private static extern int _SessionCount(IntPtr wrapperPointer);
 
 
@@ -49,8 +49,23 @@ namespace WebApplication3.Dependencies
         [DllImport(dllPath)]
         private static extern void SetMute(IntPtr wrapperPointer, int index, bool mute);
 
+        [DllImport(dllPath, CallingConvention = CallingConvention.Cdecl)]
+        private static extern int GetProcessIcon(IntPtr wraperPointer, int index, out IntPtr buffer, out uint size);
 
-        
+        public byte[] GetIconBytes(int index)
+        {
+            IntPtr bufferPtr;
+            uint size;
+            int result = GetProcessIcon(_WraperPointer, index, out bufferPtr, out size);
+            if (result != 0) return null;
+
+            byte[] iconBytes = new byte[size];
+            Marshal.Copy(bufferPtr, iconBytes, 0, (int)size);
+            Marshal.FreeHGlobal(bufferPtr); // Zwolnienie pamięci
+
+            return iconBytes;
+        }
+
         public int SessionCount
         {
             get
@@ -65,7 +80,8 @@ namespace WebApplication3.Dependencies
             {
                 _WraperPointer = CreateAudioSessionWrapper();
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 Console.WriteLine(e.ToString());
             }
         }

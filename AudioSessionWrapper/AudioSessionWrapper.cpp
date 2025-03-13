@@ -9,7 +9,7 @@ extern "C" __declspec(dllexport) CAudioSessionWrapper* CreateAudioSessionWrapper
 }
 
 extern "C" __declspec(dllexport) void DeleteAudioSessionWrapper(CAudioSessionWrapper* wrapper) {
-        delete wrapper;
+    delete wrapper;
 }
 
 extern "C" __declspec(dllexport) BSTR GetProcessName(CAudioSessionWrapper* wrapper, int index) {
@@ -40,8 +40,8 @@ extern "C" __declspec(dllexport) void SetMute(CAudioSessionWrapper* wrapper, int
     wrapper->SetMute(index, mute);
 }
 
-extern "C" __declspec(dllexport) BSTR IcoPath(CAudioSessionWrapper* wrapper, int index) {
-    return _com_util::ConvertStringToBSTR(wrapper->IcoPath(index).c_str());
+extern "C" __declspec(dllexport) int GetProcessIcon(CAudioSessionWrapper* wrapper, int index, BYTE** buffer, DWORD* size) {
+    return wrapper->GetProcessIcon(index, buffer, size);
 }
 
 CAudioSessionWrapper::CAudioSessionWrapper()
@@ -100,15 +100,22 @@ std::string CAudioSessionWrapper::GetProcessName(int index) const
     if (!initialized) {
         throw std::runtime_error("Object is not initialized");
     }
-    return sessions[index].processName;
+    return sessions[index].IcoName.processName;
 }
 
 void CAudioSessionWrapper::UpdateSessions()
 {
+
+    HRESULT hr = sessionManager->GetSessionEnumerator(&this->sessionEnumerator);
+    if (FAILED(hr)) {
+        std::cerr << "Failed to get IAudioSessionEnumerator" << std::endl;
+        return;
+    }
+
     sessions.clear();
     int sessionCount = 0;
-    HRESULT hr = sessionEnumerator->GetCount(&sessionCount);
-
+    hr = sessionEnumerator->GetCount(&sessionCount);
+    std::cout << "new session coutn:" << sessionCount<<std::endl;
     if (FAILED(hr)) throw std::runtime_error("Failed to get session count.");
 
     for (int i = 0; i < sessionCount; ++i) {
@@ -120,6 +127,12 @@ void CAudioSessionWrapper::UpdateSessions()
 
         if (FAILED(hr)) continue;
 
+        AudioSessionState state;
+        hr = sessionControl->GetState(&state);
+        if (FAILED(hr) || state == AudioSessionStateExpired) {
+            std::cout << "Skipping expired session " << i << std::endl;
+            continue; // Pomijamy wygasłe sesje
+        }
 
         Microsoft::WRL::ComPtr<IAudioSessionControl2> sessionControl2;
         hr = sessionControl.As(&sessionControl2);
@@ -164,9 +177,8 @@ void CAudioSessionWrapper::UpdateSessions()
         this->sessions.push_back({
             sessionControl,
             audioVolume,
-            GetProcessNameById(processId),
             processId,
-            icoPath
+            GetProcessIcoAndNameById(processId),
             });
     }
 }
@@ -228,30 +240,112 @@ void CAudioSessionWrapper::SetMute(int index, bool mute)
     if (FAILED(hr)) throw std::runtime_error("Failed to set mute state.");
 }
 
-std::string CAudioSessionWrapper::IcoPath(int index)
+CAudioSessionWrapper::ProcessIcoName CAudioSessionWrapper::GetProcessIcoAndNameById(DWORD processId) const
 {
-    if (index < 0 || index >= static_cast<int>(sessions.size())) {
-        throw std::out_of_range("Session index out of range.");
-    }
-    if (!initialized) {
-        throw std::runtime_error("Object is not initialized");
-    }
-    return this->sessions[index].icoPath;
-}
-
-std::string CAudioSessionWrapper::GetProcessNameById(DWORD processId) const
-{
+    //std::cout << "GetProcessIcoAndNameById\n";
     char processName[MAX_PATH] = "<unknown>";
+    char processPath[MAX_PATH] = "<unknown>";
     HANDLE processHandle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, processId);
-
+    if (processHandle == nullptr) {
+        //std::cout << "OpenProcess failed for PID: " << processId << " Error: " << GetLastError() << "\n";
+        return { "<unknown>", nullptr };
+    }
+    SHFILEINFOA shFileInfo;
     if (processHandle != nullptr) {
         HMODULE module;
         DWORD bytesNeeded;
+        //std::cout << "1\n";
         if (EnumProcessModules(processHandle, &module, sizeof(module), &bytesNeeded)) {
+            //std::cout << "2\n";
             GetModuleBaseNameA(processHandle, module, processName, sizeof(processName) / sizeof(char));
+            //std::cout << "3\n";
+            GetModuleFileNameExA(processHandle, module, processPath, sizeof(processPath) / sizeof(char));
+            //std::cout << "4\n";
+
+            SHGetFileInfoA(processPath, 0, &shFileInfo, sizeof(shFileInfo), SHGFI_ICON | SHGFI_LARGEICON);
+            //std::cout << "5\n";
         }
         CloseHandle(processHandle);
     }
 
-    return std::string(processName);
+    return { std::string(processName),shFileInfo.hIcon };
+}
+
+int GetEncoderClsid(const WCHAR* format, CLSID* pClsid)
+{
+    UINT  num = 0;          // number of image encoders
+    UINT  size = 0;         // size of the image encoder array in bytes
+
+    Gdiplus::ImageCodecInfo* pImageCodecInfo = NULL;
+
+    Gdiplus::GetImageEncodersSize(&num, &size);
+    if (size == 0)
+        return -1;  // Failure
+
+    pImageCodecInfo = (Gdiplus::ImageCodecInfo*)(malloc(size));
+    if (pImageCodecInfo == NULL)
+        return -1;  // Failure
+
+    GetImageEncoders(num, size, pImageCodecInfo);
+
+    for (UINT j = 0; j < num; ++j)
+    {
+        if (wcscmp(pImageCodecInfo[j].MimeType, format) == 0)
+        {
+            *pClsid = pImageCodecInfo[j].Clsid;
+            free(pImageCodecInfo);
+            return j;  // Success
+        }
+    }
+
+    free(pImageCodecInfo);
+    return -1;  // Failure
+}
+
+int CAudioSessionWrapper::GetProcessIcon(int index, BYTE** buffer, DWORD* size)
+{
+    if (index < 0 || index >= sessions.size()) {
+        return -1; // Nieprawidłowy indeks
+    }
+
+    HICON hIcon = sessions[index].IcoName.Ico;
+    if (!hIcon) return -1; // Brak ikony
+
+    // Inicjalizacja GDI+
+    Gdiplus::GdiplusStartupInput gdiPlusStartupInput;
+    ULONG_PTR gdiPlusToken;
+    Gdiplus::GdiplusStartup(&gdiPlusToken, &gdiPlusStartupInput, NULL);
+
+    // Konwersja HICON -> Bitmapa GDI+
+    Gdiplus::Bitmap bitmap(hIcon);
+    IStream* pStream = NULL;
+    CreateStreamOnHGlobal(NULL, TRUE, &pStream);
+
+    // Pobierz CLSID dla PNG
+    CLSID pngClsid;
+
+    GetEncoderClsid(L"image/png", &pngClsid);
+
+
+    // Zapisz bitmapę jako PNG do strumienia
+    bitmap.Save(pStream, &pngClsid, NULL);
+
+    // Pobierz rozmiar i zawartość strumienia
+    STATSTG statstg;
+    pStream->Stat(&statstg, STATFLAG_NONAME);
+    *size = statstg.cbSize.LowPart;
+
+    HGLOBAL hGlobal = NULL;
+    GetHGlobalFromStream(pStream, &hGlobal);
+    void* pData = GlobalLock(hGlobal);
+
+    // Kopiowanie bajtów
+    *buffer = new BYTE[*size];
+    memcpy(*buffer, pData, *size);
+
+    GlobalUnlock(hGlobal);
+    pStream->Release();
+    Gdiplus::GdiplusShutdown(gdiPlusToken);
+
+    return 0; // Sukces
 }

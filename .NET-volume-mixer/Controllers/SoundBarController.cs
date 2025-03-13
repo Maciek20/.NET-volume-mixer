@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using WebApplication3.Dependencies;
 
 namespace WebApplication3.Controllers
@@ -58,5 +59,24 @@ namespace WebApplication3.Controllers
             }
 			return Ok();
 		}
-	}
+
+        [Route("icon/{index}")]
+        public IActionResult GetProcessIcon(int index)
+        {
+            byte[] iconBytes = _audioManager.GetIconBytes(index);
+            if (iconBytes == null)
+                return NotFound();
+
+            return File(iconBytes, "image/png");
+        }
+
+        [HttpGet("UpdateSessions")]
+        public IActionResult UpdateSessions()
+        {
+            Console.WriteLine("update sessions");
+            _audioManager.UpdateSessions();
+
+            return Ok();
+        }
+    }
 }
