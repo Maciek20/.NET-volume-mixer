@@ -4,15 +4,16 @@
 @{
 }
 
-@foreach (var app in Model)
-{
-    <div>
-        <input type="range" id="VolumeIn_@app.Id" name="volume" min="0" max="100" step="1" style="width:50vw" value="@app.Vol"/>
-        <label for="@app.Id">@app.Name: <output id="VolumeLab_@app.Id"></output></label>
-    </div>
-}
-
-<button onclick="sendUdateEquest()">update sessions</button>
+<div id="soundSliders">
+    @foreach (var app in Model)
+    {
+        <div>
+            <input type="range" id="VolumeIn_@app.Id" name="volume" min="0" max="100" step="1" style="width:50vw" value="@app.Vol"/>
+            <label for="@app.Id">@app.Name: <output id="VolumeLab_@app.Id"></output></label>
+        </div>
+    }
+</div>
+<button onclick="sendUpdateRequest()">update sessions</button>
 
 @foreach (var app in Model)
 {
@@ -65,15 +66,46 @@
         });
     });
 
-    function sendUdateEquest() {
+    function escapeHtml(text) {
+        return text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+    function sendUpdateRequest() {
         $.ajax({
             type: "GET",
             url: '/SoundBar/UpdateSessions',
-            success: function (response) { },
+            success: function (response) { 
+                console.log(response);
+                var parsedResponse = JSON.parse(response);
+                var newSessions = "";
+            
+                for (let i = 0; i < parsedResponse.length; i++) {
+                    newSessions += `<div>
+                        <input type="range" id="VolumeIn_${parsedResponse[i]['Id']}" name="volume" min="0" max="100" step="1" style="width:50vw" value="${parsedResponse[i]['Vol']}"/>
+                        <label for="${parsedResponse[i]['Id']}">${escapeHtml(parsedResponse[i]['Name'])}: 
+                        <output id="VolumeLab_${parsedResponse[i]['Id']}">${parsedResponse[i]['Vol']}</output>
+                        </label>
+                    </div>`;
+                }
+
+                document.getElementById("soundSliders").innerHTML = newSessions;
+
+                
+                parsedResponse.forEach((app) => {
+                    document.querySelector(`#VolumeIn_${app['Id']}`).addEventListener("input", (event) => {
+                        let volume = event.target.value;
+                        document.querySelector(`#VolumeLab_${app['Id']}`).textContent = volume;
+                        if (!isRequestInProgress) {
+                            sendVolumeChange(app['Id'], volume);
+                        } else {
+                            pendingValue = { id: app['Id'], vol: volume };
+                        }
+                    });
+                });
+            },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log("Error:", jqXHR.status, jqXHR.responseText);
-            },
-            complete: function () {}
-            });
+            }
+        });
     }
+
 </script>

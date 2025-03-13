@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication3.Dependencies;
+using System.Text.Json;
 
 namespace WebApplication3.Controllers
 {
@@ -73,10 +74,16 @@ namespace WebApplication3.Controllers
         [HttpGet("UpdateSessions")]
         public IActionResult UpdateSessions()
         {
-            Console.WriteLine("update sessions");
             _audioManager.UpdateSessions();
+            List<AppId> apps = new List<AppId>();
+            for (int i = 0; i < _audioManager.SessionCount; i++)
+            {
+                apps.Add(new AppId(i, _audioManager.GetProcessName(i), (int)(_audioManager.GetVolume(i) * 100)));
+            }
+            
+            var appsJson = Json(JsonSerializer.Serialize(apps));
 
-            return Ok();
+            return appsJson;
         }
     }
 }
