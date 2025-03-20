@@ -49,22 +49,33 @@ namespace WebApplication3.Dependencies
         [DllImport(dllPath)]
         private static extern void SetMute(IntPtr wrapperPointer, int index, bool mute);
 
-        [DllImport(dllPath, CallingConvention = CallingConvention.Cdecl)]
-        private static extern int GetProcessIcon(IntPtr wraperPointer, int index, out IntPtr buffer, out uint size);
+        [DllImport(dllPath, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+        private static extern int GetProcessIcon(IntPtr wraperPointer, int index, out IntPtr buffer, ref ulong size);
 
+        
         public byte[] GetIconBytes(int index)
         {
             IntPtr bufferPtr;
-            uint size;
-            int result = GetProcessIcon(_WraperPointer, index, out bufferPtr, out size);
-            if (result != 0) return null;
+            ulong size = 0;
+
+            int result = GetProcessIcon(_WraperPointer, index, out bufferPtr, ref size);
+            if (result != 0  || size == 0)//|| bufferPtr == IntPtr.Zero
+            {
+                Console.WriteLine($"Error: result={result}, bufferPtr={bufferPtr}, size={size}");
+                return null;
+            }
+
+            Console.WriteLine($"Received bufferPtr={bufferPtr}, size={size}");
 
             byte[] iconBytes = new byte[size];
             Marshal.Copy(bufferPtr, iconBytes, 0, (int)size);
-            Marshal.FreeHGlobal(bufferPtr); // Zwolnienie pamięci
+
+            Marshal.FreeHGlobal(bufferPtr);
 
             return iconBytes;
         }
+
+
 
         public int SessionCount
         {

@@ -41,7 +41,17 @@ extern "C" __declspec(dllexport) void SetMute(CAudioSessionWrapper* wrapper, int
 }
 
 extern "C" __declspec(dllexport) int GetProcessIcon(CAudioSessionWrapper* wrapper, int index, BYTE** buffer, DWORD* size) {
+    if (!wrapper) {
+        std::cout << "wrapper is NULL!" << std::endl;
+        return -1;
+    }
+
     return wrapper->GetProcessIcon(index, buffer, size);
+}
+
+extern "C" __declspec(dllexport) int ReleaseMemory(BYTE* pArray) {
+    delete[] pArray;
+    return 0;
 }
 
 CAudioSessionWrapper::CAudioSessionWrapper()
@@ -119,7 +129,7 @@ void CAudioSessionWrapper::UpdateSessions()
     if (FAILED(hr)) throw std::runtime_error("Failed to get session count.");
 
     for (int i = 0; i < sessionCount; ++i) {
-        std::string icoPath = "";
+        std::string DisplayName = "";
         Microsoft::WRL::ComPtr<IAudioSessionControl> sessionControl;
 
 
@@ -139,36 +149,11 @@ void CAudioSessionWrapper::UpdateSessions()
 
         if (FAILED(hr)) continue;
 
+        
+
         DWORD processId = 0;
         hr = sessionControl2->GetProcessId(&processId);
         if (FAILED(hr)) continue;
-
-        LPWSTR iconPath = nullptr;
-        hr = sessionControl2->GetIconPath(&iconPath);
-        if (SUCCEEDED(hr)) {
-            if (iconPath != nullptr && wcslen(iconPath) > 0) { // Sprawdzenie, czy ciąg nie jest pusty
-                int sizeNeeded = WideCharToMultiByte(CP_UTF8, 0, iconPath, -1, nullptr, 0, nullptr, nullptr);
-                if (sizeNeeded > 0) {
-                    std::string result(sizeNeeded, 0);
-                    WideCharToMultiByte(CP_UTF8, 0, iconPath, -1, &result[0], sizeNeeded, nullptr, nullptr);
-                    icoPath = result;
-
-                    std::cout << "Valid icon path: " << result << std::endl;
-                }
-                else {
-                    std::cerr << "Failed to convert wide string to UTF-8 (sizeNeeded <= 0)." << std::endl;
-                }
-            }
-            else {
-                std::cout << "No icon path available for this session or the path is empty." << std::endl;
-            }
-            if (iconPath != nullptr) {
-                CoTaskMemFree(iconPath); // Zwolnienie pamięci przypisanej przez COM
-            }
-        }
-        else {
-            std::cerr << "Failed to retrieve icon path, HRESULT: " << std::hex << hr << std::endl;
-        }
 
         Microsoft::WRL::ComPtr<ISimpleAudioVolume> audioVolume;
         hr = sessionControl.As(&audioVolume);
@@ -243,32 +228,48 @@ void CAudioSessionWrapper::SetMute(int index, bool mute)
 CAudioSessionWrapper::ProcessIcoName CAudioSessionWrapper::GetProcessIcoAndNameById(DWORD processId) const
 {
     //std::cout << "GetProcessIcoAndNameById\n";
+    HICON hIcon = nullptr;
     char processName[MAX_PATH] = "<unknown>";
     char processPath[MAX_PATH] = "<unknown>";
+    WCHAR exeNameBuf[MAX_PATH];
+    DWORD exeNameBufLen = sizeof(exeNameBuf) / sizeof(exeNameBuf[0]);
     HANDLE processHandle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, processId);
     if (processHandle == nullptr) {
-        //std::cout << "OpenProcess failed for PID: " << processId << " Error: " << GetLastError() << "\n";
-        return { "<unknown>", nullptr };
+        std::cout << "OpenProcess failed for PID: " << processId << " Error: " << GetLastError() << "\n";
+        return { "<unknown>", LoadIcon(NULL, IDI_APPLICATION) };
     }
-    SHFILEINFOA shFileInfo;
+
     if (processHandle != nullptr) {
         HMODULE module;
         DWORD bytesNeeded;
-        //std::cout << "1\n";
-        if (EnumProcessModules(processHandle, &module, sizeof(module), &bytesNeeded)) {
-            //std::cout << "2\n";
-            GetModuleBaseNameA(processHandle, module, processName, sizeof(processName) / sizeof(char));
-            //std::cout << "3\n";
-            GetModuleFileNameExA(processHandle, module, processPath, sizeof(processPath) / sizeof(char));
-            //std::cout << "4\n";
+        
 
-            SHGetFileInfoA(processPath, 0, &shFileInfo, sizeof(shFileInfo), SHGFI_ICON | SHGFI_LARGEICON);
-            //std::cout << "5\n";
+        if (EnumProcessModules(processHandle, &module, sizeof(module), &bytesNeeded)) {
+            GetModuleBaseNameA(processHandle, module, processName, sizeof(processName) / sizeof(char));
+            GetModuleFileNameExA(processHandle, module, processPath, sizeof(processPath) / sizeof(char));
+
+
+            QueryFullProcessImageNameW(processHandle, 0, exeNameBuf, &exeNameBufLen);
+            UINT iconCount = ExtractIconExW(exeNameBuf, 0, &hIcon, NULL, 1);
+            if (iconCount == 0 || hIcon == NULL) {
+                std::wcout << "No ico in " << exeNameBuf << std::endl;
+            }
+            else {
+                std::wcout << "ico found\n";
+            }
+            int sizeNeeded = WideCharToMultiByte(CP_UTF8, 0, exeNameBuf, -1, nullptr, 0, nullptr, nullptr);
+            if (sizeNeeded > 0) {
+                std::string result(sizeNeeded, 0);
+                WideCharToMultiByte(CP_UTF8, 0, exeNameBuf, -1, &result[0], sizeNeeded, nullptr, nullptr);
+                
+
+                std::cout << "Valid icon path: " << result << std::endl;
+            }
         }
         CloseHandle(processHandle);
     }
 
-    return { std::string(processName),shFileInfo.hIcon };
+    return { std::string(processName),hIcon };
 }
 
 int GetEncoderClsid(const WCHAR* format, CLSID* pClsid)
@@ -305,47 +306,106 @@ int GetEncoderClsid(const WCHAR* format, CLSID* pClsid)
 int CAudioSessionWrapper::GetProcessIcon(int index, BYTE** buffer, DWORD* size)
 {
     if (index < 0 || index >= sessions.size()) {
-        return -1; // Nieprawidłowy indeks
+        return -1;
     }
 
     HICON hIcon = sessions[index].IcoName.Ico;
-    if (!hIcon) return -1; // Brak ikony
+    if (!hIcon) return -1;
 
-    // Inicjalizacja GDI+
+    // init GDI+
     Gdiplus::GdiplusStartupInput gdiPlusStartupInput;
     ULONG_PTR gdiPlusToken;
     Gdiplus::GdiplusStartup(&gdiPlusToken, &gdiPlusStartupInput, NULL);
 
-    // Konwersja HICON -> Bitmapa GDI+
-    Gdiplus::Bitmap bitmap(hIcon);
+
+    // HICON to HBITMAP
+    ICONINFO iconInfo;
+    if (!GetIconInfo(hIcon, &iconInfo)) {
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
+    //Gdiplus::Bitmap bitmap(iconInfo.hbmColor, NULL);
+    Gdiplus::Bitmap* bitmap = Gdiplus::Bitmap::FromHICON(hIcon);
+
+    if (bitmap == nullptr) {
+        std::cout << "bitmap fail" << std::endl;
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
+
+
     IStream* pStream = NULL;
-    CreateStreamOnHGlobal(NULL, TRUE, &pStream);
+    if (FAILED(CreateStreamOnHGlobal(NULL, TRUE, &pStream))) {
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
 
-    // Pobierz CLSID dla PNG
+    // get CLSID for PNG
     CLSID pngClsid;
+    if (GetEncoderClsid(L"image/png", &pngClsid) == -1) {
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
 
-    GetEncoderClsid(L"image/png", &pngClsid);
+    //how to save icon
+    //int stat = bitmap->Save(L"Bird.png", &pngClsid, NULL);
 
+    //if (stat == 0)
+    //    printf("Bird.png was saved successfully\n");
+    //else
+    //    printf("Failure: stat = %d\n", stat);
 
-    // Zapisz bitmapę jako PNG do strumienia
-    bitmap.Save(pStream, &pngClsid, NULL);
+    // save bitmap as PNG to stream
+    if (bitmap->Save(pStream, &pngClsid, NULL) != Gdiplus::Ok) {
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
+    std::cout << "7" << std::endl;
 
-    // Pobierz rozmiar i zawartość strumienia
+    // get size and content of the stream
     STATSTG statstg;
-    pStream->Stat(&statstg, STATFLAG_NONAME);
+    if (FAILED(pStream->Stat(&statstg, STATFLAG_NONAME))) {
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
     *size = statstg.cbSize.LowPart;
+    std::cout << "8" << std::endl;
+
+    if (*size == 0) {
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
 
     HGLOBAL hGlobal = NULL;
-    GetHGlobalFromStream(pStream, &hGlobal);
-    void* pData = GlobalLock(hGlobal);
+    if (FAILED(GetHGlobalFromStream(pStream, &hGlobal))) {
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
 
-    // Kopiowanie bajtów
-    *buffer = new BYTE[*size];
+    void* pData = GlobalLock(hGlobal);
+    if (pData == nullptr) return -1;
+    std::cout << "9" << std::endl;
+    //*size = 4;
+
+    *buffer = (BYTE*)CoTaskMemAlloc(*size);
+    if (*buffer == NULL) {
+        GlobalUnlock(hGlobal);
+        pStream->Release();
+        Gdiplus::GdiplusShutdown(gdiPlusToken);
+        return -1;
+    }
+
     memcpy(*buffer, pData, *size);
 
     GlobalUnlock(hGlobal);
+    delete bitmap;
     pStream->Release();
     Gdiplus::GdiplusShutdown(gdiPlusToken);
-
-    return 0; // Sukces
+    
+    return 0;
 }

@@ -2,25 +2,26 @@
 
 
 @{
+    
 }
+
+<style>
+    .slider {
+        padding : 5px;
+    }
+</style>
 
 <div id="soundSliders">
     @foreach (var app in Model)
     {
-        <div>
+        <div class="slider">
+            <img src="/SoundBar/icon/@app.Id" alt="Ikona procesu" style="max-height=20">
             <input type="range" id="VolumeIn_@app.Id" name="volume" min="0" max="100" step="1" style="width:50vw" value="@app.Vol"/>
             <label for="@app.Id">@app.Name: <output id="VolumeLab_@app.Id"></output></label>
         </div>
     }
 </div>
 <button onclick="sendUpdateRequest()">update sessions</button>
-
-@foreach (var app in Model)
-{
-    <div>
-            <!--img src="/SoundBar/icon/0" alt="Ikona procesu"-->
-    </div>
-}
 
 <script type="text/javascript">
     var apps = @Html.Raw(Json.Serialize(Model));
@@ -60,7 +61,6 @@
             if (!isRequestInProgress) {
                 sendVolumeChange(app['id'], volume);
             } else {
-                // Jeśli żądanie jest w toku, przechowujemy ostatnią wartość, którą chcemy wysłać
                 pendingValue = { id: app['id'], vol: volume };
             }
         });
@@ -79,7 +79,8 @@
                 var newSessions = "";
             
                 for (let i = 0; i < parsedResponse.length; i++) {
-                    newSessions += `<div>
+                    newSessions += `<div class="slider">
+                        <img src="/SoundBar/icon/${parsedResponse[i]['Id']}" alt="Ikona procesu" style="max-height=20">
                         <input type="range" id="VolumeIn_${parsedResponse[i]['Id']}" name="volume" min="0" max="100" step="1" style="width:50vw" value="${parsedResponse[i]['Vol']}"/>
                         <label for="${parsedResponse[i]['Id']}">${escapeHtml(parsedResponse[i]['Name'])}: 
                         <output id="VolumeLab_${parsedResponse[i]['Id']}">${parsedResponse[i]['Vol']}</output>

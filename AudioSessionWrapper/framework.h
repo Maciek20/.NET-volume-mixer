@@ -5,6 +5,7 @@
 #define WIN32_LEAN_AND_MEAN             // Wyklucz rzadko używane rzeczy z nagłówków systemu Windows
 // Pliki nagłówkowe systemu Windows
 #include <windows.h>
+#include <WinBase.h>
 #include <stdexcept>
 #include <mmdeviceapi.h>
 #include <audiopolicy.h>
@@ -18,3 +19,5 @@
 #include <shlobj.h>
 #include <shellapi.h>
 #include <gdiplus.h>
+
+//#include "get-exe-icon.h"
